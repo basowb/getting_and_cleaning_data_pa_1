@@ -1,0 +1,179 @@
+---
+title: "Getting and Cleaning Data Code Book"
+author: "Benjamin Basow"
+date: "October 15, 2017"
+output: html_document
+---
+
+
+#Focus of Data Set
+
+Record human activity using smartphone human activity recognition technology
+
+
+# Source of These Data
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body     acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+# License Information
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
+
+# Desctiption of Variables
+
+ [1] "Subject" (Subject ID)
+ 
+ [2] "Activity" (The activity performed)
+ 
+ [3] "TimeDomain.BodyAccelerationeleration.Mean...X" (Mean time for acceleration  of body for X direction)                                 
+ 
+ [4] "TimeDomain.BodyAccelerationeleration.Mean...Y" (Mean time for acceleration of body for Y direction)
+ 
+ [5] "TimeDomain.BodyAccelerationeleration.Mean...Z" (Mean time for acceleration of body for Z direction)
+ 
+ [6] "TimeDomain.BodyAccelerationeleration.StandardDeviation...X" (Standard deviation of time for acceleration of body for X direction)   
+ 
+ [7] "TimeDomain.BodyAccelerationeleration.StandardDeviation...Y" (Standard deviation of time for acceleration of body for Y direction)                 
+ 
+ [8] "TimeDomain.BodyAccelerationeleration.StandardDeviation...Z" (	Standard deviation of time for acceleration of body for Z direction)                  
+ 
+ [9] "TimeDomain.GravityAccelerationeleration.Mean...X" (Mean time of acceleration of gravity for X direction)
+ 
+[10] "TimeDomain.GravityAccelerationeleration.Mean...Y" (	Mean time of acceleration of gravity for Y direction)
+
+[11] "TimeDomain.GravityAccelerationeleration.Mean...Z" (Mean time of acceleration of gravity for Z direction)
+
+[12] "TimeDomain.GravityAccelerationeleration.StandardDeviation...X" (Standard deviation of time of acceleration of gravity for X direction)
+
+[13] "TimeDomain.GravityAccelerationeleration.StandardDeviation...Y" (Standard deviation of time of acceleration of gravity for Y direction)          
+
+[14] "TimeDomain.GravityAccelerationeleration.StandardDeviation...Z" (Standard deviation of time of acceleration of gravity for Z direction)
+
+[15] "TimeDomain.BodyAccelerationelerationJerk.Mean...X" (Mean time of body acceleration jerk for X direction)                        
+
+[16] "TimeDomain.BodyAccelerationelerationJerk.Mean...Y" (Mean time of body acceleration jerk for Y direction)                        
+
+[17] "TimeDomain.BodyAccelerationelerationJerk.Mean...Z" (Mean time of body acceleration jerk for Z direction)
+
+[18] "TimeDomain.BodyAccelerationelerationJerk.StandardDeviation...X" (Standard deviation of time of body acceleration jerk for X direction)
+
+[19] "TimeDomain.BodyAccelerationelerationJerk.StandardDeviation...Y" (Standard deviation of time of body acceleration jerk for Y direction)      
+
+[20] "TimeDomain.BodyAccelerationelerationJerk.StandardDeviation...Z" (Standard deviation of time of body acceleration jerk for Z direction)           
+
+[21] "TimeDomain.BodyAngularSpeed.Mean...X" (Mean body gyroscope measurement for X direction)
+
+[22] "TimeDomain.BodyAngularSpeed.Mean...Y" (Mean body gyroscope measurement for Y direction)
+
+[23] "TimeDomain.BodyAngularSpeed.Mean...Z" (Mean body gyroscope measurement for Z direction)                                   
+
+[24] "TimeDomain.BodyAngularSpeed.StandardDeviation...X" (Standard deviation of body gyroscope measurement for X direction)              
+
+[25] "TimeDomain.BodyAngularSpeed.StandardDeviation...Y" (Standard deviation of body gyroscope measurement for Y direction)
+
+[26] "TimeDomain.BodyAngularSpeed.StandardDeviation...Z" (Standard deviation of body gyroscope measurement for Z direction)               
+
+[27] "TimeDomain.BodyAngularAccelerationeleration.Mean...X" (Mean jerk signal of body for X direction)
+
+[28] "TimeDomain.BodyAngularAccelerationeleration.Mean...Y" (Mean jerk signal of body for Y direction)
+
+[29] "TimeDomain.BodyAngularAccelerationeleration.Mean...Z" (Mean jerk signal of body for Z direction)                                  
+
+[30] "TimeDomain.BodyAngularAccelerationeleration.StandardDeviation...X" (Standard deviation of jerk signal of body for X direction)                  
+
+[31] "TimeDomain.BodyAngularAccelerationeleration.StandardDeviation...Y" (Standard deviation of jerk signal of body for Y direction)
+
+[32] "TimeDomain.BodyAngularAccelerationeleration.StandardDeviation...Z" (Standard deviation of jerk signal of body for Z direction)
+
+[33] "TimeDomain.BodyAccelerationelerationMagnitudenitude.Mean.." (Mean magnitude of body Acc)                            
+
+[34] "TimeDomain.BodyAccelerationelerationMagnitudenitude.StandardDeviation.." (	Standard deviation of magnitude of body Acc)   
+
+[35] "TimeDomain.GravityAccelerationelerationMagnitudenitude.Mean.." (Mean gravity acceleration magnitude)
+
+[36] "TimeDomain.GravityAccelerationelerationMagnitudenitude.StandardDeviation.." (Standard deviation of gravity acceleration magnitude)  
+
+[37] "TimeDomain.BodyAccelerationelerationJerkMagnitudenitude.Mean.." (Mean magnitude of body acceleration jerk)     
+
+[38] "TimeDomain.BodyAccelerationelerationJerkMagnitudenitude.StandardDeviation.." (Standard deviation of magnitude of body acceleration jerk) 
+
+[39] "TimeDomain.BodyAngularSpeedMagnitudenitude.Mean.." (Mean magnitude of body gyroscope measurement)
+
+[40] "TimeDomain.BodyAngularSpeedMagnitudenitude.StandardDeviation.." (Standard deviation of magnitude of body gyroscope measurement)
+
+[41] "TimeDomain.BodyAngularAccelerationelerationMagnitudenitude.Mean.." (Mean magnitude of body body gyroscope jerk measurement)              
+
+[42] "TimeDomain.BodyAngularAccelerationelerationMagnitudenitude.StandardDeviation.." (Standard deviation of magnitude of body body gyroscope jerk measurement)
+
+[43] "FrequencyDomain.BodyAccelerationeleration.Mean...X" (Mean frequency of body acceleration for X direction)
+
+[44] "FrequencyDomain.BodyAccelerationeleration.Mean...Y" (Mean frequency of body acceleration for Y direction)
+
+[45] "FrequencyDomain.BodyAccelerationeleration.Mean...Z" (Mean frequency of body acceleration for Z direction)
+
+[46] "FrequencyDomain.BodyAccelerationeleration.StandardDeviation...X" (Standard deviation of frequency of body acceleration for X direction)
+
+[47] "FrequencyDomain.BodyAccelerationeleration.StandardDeviation...Y" (Standard deviation of frequency of body acceleration for Y direction)            
+
+[48] "FrequencyDomain.BodyAccelerationeleration.StandardDeviation...Z" (Standard deviation of frequency of body acceleration for Z direction)
+
+[49] "FrequencyDomain.BodyAccelerationelerationJerk.Mean...X" (Mean frequency of body accerlation jerk for X direction)                         
+
+[50] "FrequencyDomain.BodyAccelerationelerationJerk.Mean...Y" (Mean frequency of body accerlation jerk for Y direction)                         
+
+[51] "FrequencyDomain.BodyAccelerationelerationJerk.Mean...Z" (Mean frequency of body accerlation jerk for Z direction)                           
+
+[52] "FrequencyDomain.BodyAccelerationelerationJerk.StandardDeviation...X" (Standard deviation frequency of body accerlation jerk for X direction)
+
+[53] "FrequencyDomain.BodyAccelerationelerationJerk.StandardDeviation...Y" (Standard deviation frequency of body accerlation jerk for Y direction)  
+
+[54] "FrequencyDomain.BodyAccelerationelerationJerk.StandardDeviation...Z" (Standard deviation frequency of body accerlation jerk for Z direction)        
+
+[55] "FrequencyDomain.BodyAngularSpeed.Mean...X" (Mean frequency of body gyroscope measurement for X direction) 
+
+[56] "FrequencyDomain.BodyAngularSpeed.Mean...Y" (Mean frequency of body gyroscope measurement for Y direction)                 
+
+[57] "FrequencyDomain.BodyAngularSpeed.Mean...Z" (Mean frequency of body gyroscope measurement for Z direction)               
+
+[58] "FrequencyDomain.BodyAngularSpeed.StandardDeviation...X" (Standard deviation frequency of body gyroscope measurement for X direction)
+
+[59] "FrequencyDomain.BodyAngularSpeed.StandardDeviation...Y" (Standard deviation frequency of body gyroscope measurement for Y direction)
+
+[60] "FrequencyDomain.BodyAngularSpeed.StandardDeviation...Z" (Standard deviation frequency of body gyroscope measurement for Z direction)
+
+[61] "FrequencyDomain.BodyAccelerationelerationMagnitudenitude.Mean.." (Mean frequency of body acceleration magnitude)
+
+[62] "FrequencyDomain.BodyAccelerationelerationMagnitudenitude.StandardDeviation.." (Standard deviation of frequency of body acceleration magnitude) 
+
+[63] "FrequencyDomain.BodyBodyAccelerationelerationJerkMagnitudenitude.Mean.." (Mean frequency of body acceleration jerk magnitude)    
+
+[64] "FrequencyDomain.BodyBodyAccelerationelerationJerkMagnitudenitude.StandardDeviation.." (Standard deviation of frequency of body acceleration jerk magnitude)
+
+[65] "FrequencyDomain.BodyBodyAngularSpeedMagnitudenitude.Mean.." (Mean frequency of magnitude of body gyroscope measurement)
+
+[66] "FrequencyDomain.BodyBodyAngularSpeedMagnitudenitude.StandardDeviation.." (Standard deviation of frequency of magnitude of body gyroscope measurement) 
+
+[67] "FrequencyDomain.BodyBodyAngularAccelerationelerationMagnitudenitude.Mean.." (Mean frequency of magnitude of body gyroscope jerk measurement)
+
+[68] "FrequencyDomain.BodyBodyAngularAccelerationelerationMagnitudenitude.StandardDeviation.."
+
+(Standard deviation frequency of magnitude of body gyroscope jerk measurement)
+
